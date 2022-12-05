@@ -6,5 +6,7 @@ package observerpattern.observer;
  */
 public interface Observer {
 
-    public void update(float temp, float humidity, float pressure);
+    void update(float temp, float humidity, float pressure);
+    // 풀 방식
+    // void update();
 }

@@ -29,4 +29,10 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
         this.humidity = humidity;
         this.display();
     }
+
+    // 풀 방식
+//    public void update() {
+//        this.temperature = this.weatherData.getTemperature();
+//        this.humidity = this.weatherData.getHumidity();
+//    }
 }

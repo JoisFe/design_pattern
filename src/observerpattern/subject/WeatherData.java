@@ -3,7 +3,6 @@ package observerpattern.subject;
 import java.util.ArrayList;
 import java.util.List;
 import observerpattern.observer.Observer;
-import observerpattern.subject.Subject;
 
 /**
  * @author : 조재철
@@ -54,6 +53,8 @@ public class WeatherData implements Subject {
     public void notifyObservers() {
         for (Observer observer : observers) {
             observer.update(this.temperature, this.humidity, this.pressure);
+            // 풀 방식
+            // observer.update();
         }
     }
 
