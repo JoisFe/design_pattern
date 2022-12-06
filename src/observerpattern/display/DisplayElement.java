@@ -6,5 +6,5 @@ package observerpattern.display;
  */
 public interface DisplayElement {
 
-    public void display();
+    void display();
 }
