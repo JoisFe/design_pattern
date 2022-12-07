@@ -15,7 +15,8 @@ public class InputTest {
         int c;
 
         try {
-            InputStream in = new LowerCaseInputStream(new BufferedInputStream(new FileInputStream("src/decoratorpattern/java_io/test.txt")));
+            InputStream in = new LowerCaseInputStream(
+                new BufferedInputStream(new FileInputStream("src/decoratorpattern/java_io/test.txt")));
 
             while ((c = in.read()) >= 0) {
                 System.out.println((char) c);
