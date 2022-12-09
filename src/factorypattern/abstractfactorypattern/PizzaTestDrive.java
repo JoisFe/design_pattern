@@ -1,9 +1,9 @@
-package factorypattern.factorymethodpattern;
+package factorypattern.abstractfactorypattern;
 
-import factorypattern.factorymethodpattern.pizza.Pizza;
-import factorypattern.factorymethodpattern.store.ChicagoStylePizzaStore;
-import factorypattern.factorymethodpattern.store.NYStylePizzaStore;
-import factorypattern.factorymethodpattern.store.PizzaStore;
+import factorypattern.abstractfactorypattern.pizza.Pizza;
+import factorypattern.abstractfactorypattern.store.ChicagoStylePizzaStore;
+import factorypattern.abstractfactorypattern.store.NYStylePizzaStore;
+import factorypattern.abstractfactorypattern.store.PizzaStore;
 
 /**
  * @author : 조재철
@@ -19,7 +19,7 @@ public class PizzaTestDrive {
         System.out.println("1이 주문한 " + pizza.getName());
         System.out.println();
 
-        pizza = chicagoStore.orderPizza("pepperoni");
+        pizza = chicagoStore.orderPizza("clams");
         System.out.println("2이 주문한 " + pizza.getName());
     }
 }
